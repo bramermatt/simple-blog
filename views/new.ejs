@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Blog Post</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Add a New Blog Post</h1>
+
+  <form action="/new" method="POST" enctype="multipart/form-data">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="image">Image:</label><br>
+    <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+    <label for="body">Content:</label><br>
+    <textarea id="body" name="content" rows="10" cols="50" required></textarea><br><br>
+
+    <button type="submit">Submit Post</button>
+  </form>
+
+  <p><a href="/">← Back to Blog</a></p>
+</body>
+</html>
